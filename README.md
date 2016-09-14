@@ -8,7 +8,7 @@
 </head>
 
 <body>
-
+<?php include_once("analyticstracking.php") ?>
 <center>
 
 <h1>Music Sales Report, Sweden 2015</h1>
@@ -25,6 +25,14 @@
 
 <canvas id="myChart" width:400px; height:400px ></canvas>
 <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84140048-1', 'auto');
+  ga('send', 'pageview');
+
 Chart.defaults.global.defaultFontColor = '#fff';
 Chart.defaults.global.defaultFontFamily = "Comic Sans MS";
 
