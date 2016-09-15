@@ -1,0 +1,16 @@
+h1 {
+	font-family: arial;
+	color: brown;
+}
+h3 {font-family: arial;
+color: grey;}
+p {
+	font-family: arial;
+	color: grey;
+}
+body { 
+	background-image: url("http://www.mykingscrown.com/wp-content/uploads/2015/06/bigstock-Abstract-d-white-geometric-ba-62092823.jpg") }
+.myChart{
+	height: 250px;
+	width: auto;
+}
