@@ -20,11 +20,14 @@ This is module over how Swedes themselves define their rate of happiness.
 <br>
 <br>
 <br>
+<h1>Age</h1>
 <canvas id="myChart" width="400" height="400"></canvas>
 <br>
-<h1>Age</h1>
+<h1>Health</h1>
+<h3> - good or very good depending on studies</h3>
 <br>
 <canvas id="myChart2" width="400" height="400"></canvas>
+<div class="myChart">
 <script>
 Chart.defaults.global.elements.line.backgroundColor="transparent";
 var ctx = document.getElementById("myChart");
@@ -90,7 +93,7 @@ var myChart = new Chart(ctx, {
 });
 var ctx = document.getElementById("myChart2");
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'horizontalBar',
     data: {
 
         labels: ["Junior high", "Senior high", "Post-secondary",],
@@ -102,6 +105,8 @@ var myChart = new Chart(ctx, {
          
             borderColor: [
                 'rgba(2, 99, 132, 1)',
+                'rgba(3, 19, 132, 1)',
+                'rgba(5, 39, 132, 1)',
             
             ],
             borderWidth: 2
@@ -113,7 +118,9 @@ var myChart = new Chart(ctx, {
             
          
             borderColor: [
-                'rgba(75, 226, 213, 1)',
+                'rgba(2, 99, 132, 1)',
+                'rgba(3, 19, 132, 1)',
+                'rgba(5, 39, 132, 1)',
            
             ],
             borderWidth: 2
@@ -131,15 +138,14 @@ var myChart = new Chart(ctx, {
     }
 });
 </script>
-
+</div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-84140048-1', 'auto');
   ga('send', 'pageview');
-
 </script>
+
 </body>
