@@ -11,6 +11,9 @@
 <br>
 <br>
 <h1> Self-estimated Health in Sweden 2004-2015</h1>
+<p>
+This is module over how Swedes themselves define their rate of happiness. 
+</p>
 <br>
 <img src="http://www.hopkinsmedicine.org/sebin/r/v/health_promise.jpg">
 <br>
@@ -18,6 +21,10 @@
 <br>
 <br>
 <canvas id="myChart" width="400" height="400"></canvas>
+<br>
+<h1>Age</h1>
+<br>
+<canvas id="myChart2" width="400" height="400"></canvas>
 <script>
 Chart.defaults.global.elements.line.backgroundColor="transparent";
 var ctx = document.getElementById("myChart");
@@ -25,53 +32,49 @@ var myChart = new Chart(ctx, {
     type: 'line',
     data: {
 
-        labels: ["16-18", "", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["04-06", "", "06-08", "", "08-10", "", "10-12", "", "13-15"],
         datasets: [{
             label: '# Man',
-            data: [12, 19, 3, 5, 2, 3],
+            data: [71.08, 72.15, 73.49, 73.78, 74.3, 74.99, 75.27, 75.43, 75.78],
 
             
          
             borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(2, 99, 132, 1)',
+            
             ],
-            borderWidth: 1
+            borderWidth: 2
         },
         {
             label: '# Woman',
-            data: [15, 20, 31, 8, 2, 3],
+            data: [65.45, 66.23, 67.59, 68.49, 69.43, 70.03, 70.7, 70.57, 70.47, 70.6],
 
             
          
             borderColor: [
-                'rgba(255,99,132,1)',
+                'rgba(234, 226, 213, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
                 'rgba(75, 192, 192, 1)',
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
             ],
-            borderWidth: 1
+            borderWidth: 2
         }, {
             label: '# Total',
-            data: [15, 20, 31, 8, 2, 3],
+            data: [68.27, 69.18, 70.55, 71.05, 71.61, 72.17, 72.85, 72.92, 73.19],
 
             
          
             borderColor: [
-                'rgba(255,99,132,1)',
+                'rgba(86, 42, 43, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
                 'rgba(75, 192, 192, 1)',
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
             ],
-            borderWidth: 1
+            borderWidth: 2
         },
         ]
     },
@@ -85,5 +88,49 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+var ctx = document.getElementById("myChart2");
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+
+        labels: ["Junior high", "Senior high", "Post-secondary",],
+        datasets: [{
+            label: '# Man',
+            data: [71.08, 72.15, 73.49,],
+
+            
+         
+            borderColor: [
+                'rgba(2, 99, 132, 1)',
+            
+            ],
+            borderWidth: 2
+        },
+        {
+            label: '# Woman',
+            data: [60.45, 54.5, 56.7,],
+
+            
+         
+            borderColor: [
+                'rgba(75, 226, 213, 1)',
+           
+            ],
+            borderWidth: 2
+        }, 
+        ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
 </script>
+
+
 </body>
