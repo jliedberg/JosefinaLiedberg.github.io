@@ -4,30 +4,54 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.js">
 </script>
 <link rel="stylesheet" href="css/colors.css" type="text/css">
+<script type=”text/javascript”>
+jQuery-kod här
+</script>
+</head>
 </head>
 
 <body>
 <center>
 <br>
 <br>
-<h1> Self-estimated Health in Sweden 2004-2015</h1>
-<p>
-This is module over how Swedes themselves define their rate of happiness. 
-</p>
+<h1> Self-estimated Health in Sweden from 2004-2015.</h1>
+<p><i>Self-estimated health is an indicator that shows how people perceive their own health.</i></p>
 <br>
 <img src="http://www.hopkinsmedicine.org/sebin/r/v/health_promise.jpg">
 <br>
+<center>
+<div class="boxed">
+<p>
+<em>This is a presentation over how Swedes think of their own health.
+</em>
+</p>
+
+<p><strong>*Graph <em>no.1</em> is showing woman compared to men's from 2004 until 2015 
+<p>*Graph <em>no.2</em> shows how eductional level has an impact on self-estimated health.  </strong>
+</p> 
+</div>
+</strong>
+
+</p>
+</center>
 <br>
 <br>
-<br>
-<h1>Age</h1>
+<h1>Graph 1</h1>
+<p>Self-estimated health in percent from 2004 to 2015.</p>
 <canvas id="myChart" width="400" height="400"></canvas>
 <br>
-<h1>Health</h1>
-<h3> - good or very good depending on studies</h3>
+<br>
+<h1>Graph 2</h1>
+<p>Educational level in relation to self-estimated health.</p>
 <br>
 <canvas id="myChart2" width="400" height="400"></canvas>
 <div class="myChart">
+<br>
+<br>
+<br>
+<br>
+<p>* Population: Men/ Women | Age: 16-84 |
+Source: <a href="https://www.folkhalsomyndigheten.se/folkhalsorapportering-statistik/folkhalsans-utveckling/sjalvskattad-halsa/">Folkhalsan</a></p>
 <script>
 Chart.defaults.global.elements.line.backgroundColor="transparent";
 var ctx = document.getElementById("myChart");
@@ -35,7 +59,7 @@ var myChart = new Chart(ctx, {
     type: 'line',
     data: {
 
-        labels: ["04-06", "", "06-08", "", "08-10", "", "10-12", "", "13-15"],
+        labels: ["2004-06", "", "2006-08", "", "2008-10", "", "2010-12", "", "2013-15"],
         datasets: [{
             label: '# Man',
             data: [71.08, 72.15, 73.49, 73.78, 74.3, 74.99, 75.27, 75.43, 75.78],
@@ -50,12 +74,12 @@ var myChart = new Chart(ctx, {
         },
         {
             label: '# Woman',
-            data: [65.45, 66.23, 67.59, 68.49, 69.43, 70.03, 70.7, 70.57, 70.47, 70.6],
+            data: [65.45, 66.23, 67.59, 68.49, 69.43, 70.03, 70.7, 70.57, 70.6],
 
             
          
             borderColor: [
-                'rgba(234, 226, 213, 1)',
+                'rgba(204, 153, 0, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(255, 206, 86, 1)',
                 'rgba(75, 192, 192, 1)',
@@ -99,28 +123,28 @@ var myChart = new Chart(ctx, {
         labels: ["Junior high", "Senior high", "Post-secondary",],
         datasets: [{
             label: '# Man',
-            data: [71.08, 72.15, 73.49,],
+            data: [63.69, 73.64, 80.83,],
 
             
          
             borderColor: [
                 'rgba(2, 99, 132, 1)',
-                'rgba(3, 19, 132, 1)',
-                'rgba(5, 39, 132, 1)',
+                'rgba(2, 99, 132, 1)',
+                'rgba(2, 99, 132, 1)',
             
             ],
             borderWidth: 2
         },
         {
             label: '# Woman',
-            data: [60.45, 54.5, 56.7,],
+            data: [60.46, 67.65, 77.47,],
 
             
          
             borderColor: [
-                'rgba(2, 99, 132, 1)',
-                'rgba(3, 19, 132, 1)',
-                'rgba(5, 39, 132, 1)',
+                'rgba(204, 153, 0, 1)',
+                'rgba(204, 153, 0, 1)',
+                'rgba(204, 153, 0, 1)',
            
             ],
             borderWidth: 2
