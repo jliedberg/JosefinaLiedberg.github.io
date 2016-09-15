@@ -1,16 +1,36 @@
 h1 {
-	font-family: arial;
-	color: brown;
+	font-family: garamond;
+	color: black;
+	line-height: 160%;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px #FFF;
 }
-h3 {font-family: arial;
-color: grey;}
+h3 {font-family: garamond;
+color: black;}
 p {
-	font-family: arial;
-	color: grey;
+	font-family: garamond; 
+	color: black;
+	font-size: 18px;
+	letter-spacing: 0.8px;
 }
+
 body { 
-	background-image: url("http://www.mykingscrown.com/wp-content/uploads/2015/06/bigstock-Abstract-d-white-geometric-ba-62092823.jpg") }
+	background: -webkit-linear-gradient(top, #ffcccc, #FFF);
+background: -moz-linear-gradient(top, #ffcccc, #FFF);
+background: -ms-linear-gradient(top, #ffcccc, #FFF);
+ }
+
+
 .myChart{
 	height: 250px;
 	width: auto;
+}
+
+.boxed {
+  border: 5px solid black ;
+  border-radius: 10px;
+  background-color: beige;
+width: 400px;
+margin: 25px; 
+padding: 25px;
 }
