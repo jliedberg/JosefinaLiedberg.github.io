@@ -1,0 +1,36 @@
+
+h1 { text-align: center;
+	 font-family: "Philosopher", sans-serif;
+	 font-size: 60px;
+	 letter-spacing: 2px;
+	 padding-top: 20px;
+
+}
+
+hr  {
+   	border-top: 2px solid black;
+   	width: 90%;
+	
+
+
+}
+
+
+ img {
+
+ 		width: 600px;
+ 		height: 400px;
+ 		padding-top: 20px;
+
+
+
+ }
+
+.img_class {	
+
+			position: center;
+
+
+
+
+}
